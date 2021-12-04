@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render api toJSON 1`] = `
+<View>
+  <Text>
+    Is the banana fresh?
+  </Text>
+  <Text
+    testID="bananaFresh"
+  >
+    not fresh
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    placeholder="Add custom freshness"
+    rejectResponderTermination={true}
+    testID="bananaCustomFreshness"
+    underlineColorAndroid="transparent"
+    value="Custom Freshie"
+  />
+  <TextInput
+    allowFontScaling={true}
+    defaultValue="What did you inspect?"
+    placeholder="Who inspected freshness?"
+    rejectResponderTermination={true}
+    testID="bananaChef"
+    underlineColorAndroid="transparent"
+    value="I inspected freshie"
+  />
+  <TextInput
+    allowFontScaling={true}
+    defaultValue="What banana?"
+    rejectResponderTermination={true}
+    underlineColorAndroid="transparent"
+  />
+  <TextInput
+    allowFontScaling={true}
+    defaultValue="hello"
+    rejectResponderTermination={true}
+    underlineColorAndroid="transparent"
+    value=""
+  />
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text>
+      Change freshness!
+    </Text>
+  </View>
+  <Text
+    testID="duplicateText"
+  >
+    First Text
+  </Text>
+  <Text
+    testID="duplicateText"
+  >
+    Second Text
+  </Text>
+  <Text>
+    0
+  </Text>
+</View>
+`;
