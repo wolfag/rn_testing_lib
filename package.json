@@ -12,6 +12,7 @@
     "@react-native-community/masked-view": "^0.1.11",
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/stack": "^6.0.11",
+    "enzyme": "^3.11.0",
     "expo": "~43.0.2",
     "expo-status-bar": "~1.1.0",
     "react": "17.0.1",
@@ -22,6 +23,8 @@
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "3.8.0",
     "react-native-web": "0.17.1",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
     "strip-ansi": "^7.0.1"
   },
   "devDependencies": {

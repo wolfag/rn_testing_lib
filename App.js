@@ -5,25 +5,30 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import SignIn from './src/screens/SignIn';
 import Example from './src/screens/Example';
+import configureStore from './src/store';
+import { Provider } from 'react-redux';
 
 const Stack = createStackNavigator();
+const store = configureStore();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name='SignIn'
-          component={SignIn}
-          options={{ title: 'Sign In' }}
-        />
-        <Stack.Screen
-          name='App'
-          component={Example}
-          options={{ title: 'Success!' }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen
+            name='SignIn'
+            component={SignIn}
+            options={{ title: 'Sign In' }}
+          />
+          <Stack.Screen
+            name='App'
+            component={Example}
+            options={{ title: 'Success!' }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
 }
 
